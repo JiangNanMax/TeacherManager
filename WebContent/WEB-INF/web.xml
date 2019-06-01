@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>TeacherManager</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>AdminLogin.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+      <servlet-name>AdminLoginCheck</servlet-name>
+      <servlet-class>Service.AdminLoginCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AdminLoginCheck</servlet-name>
+      <url-pattern>/Service/AdminLoginCheck</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>AdminChangePW</servlet-name>
+      <servlet-class>Service.AdminChangePW</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AdminChangePW</servlet-name>
+      <url-pattern>/Service/AdminChangePW</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>AdminAdd</servlet-name>
+      <servlet-class>Service.AdminAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AdminAdd</servlet-name>
+      <url-pattern>/Service/AdminAdd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>AdminDel</servlet-name>
+      <servlet-class>Service.AdminDel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AdminDel</servlet-name>
+      <url-pattern>/Service/AdminDel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>AdminUpdate</servlet-name>
+      <servlet-class>Service.AdminUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>AdminUpdate</servlet-name>
+      <url-pattern>/Service/AdminUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>father_dept</servlet-name>
+      <servlet-class>Service.father_dept</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>father_dept</servlet-name>
+      <url-pattern>/Service/father_dept</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+      <servlet-name>son_dept</servlet-name>
+      <servlet-class>Service.son_dept</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>son_dept</servlet-name>
+      <url-pattern>/Service/son_dept</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+
